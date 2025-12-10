@@ -2,7 +2,7 @@
     --mainFont: "Open Sans", sans-serif;
     --primary: #ff206e;
 }
-
+/*start navbar*/
 .navbar-nav .nav-item .nav-link {
     color: #fff;
 }
@@ -10,3 +10,39 @@
 .navbar-nav .nav-item a.active {
     color: var(--primary);
 }
+/*end navbar*/
+
+ /*start hero*/
+.hero {
+    background-image: url('./../img/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-weight: 800;
+    font-size: 48px;
+}
+
+.primary-color {
+    color: var(--primary);
+}
+
+.social .icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #2e2e2e;
+    transition: .8s;
+}
+
+.social .icon i {
+    font-size: 15px;
+}
+
+.social .icon:hover {
+    border: 1px solid #fff;
+}
+/*end hero*/
