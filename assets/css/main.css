@@ -4,8 +4,34 @@
 }
 
 body {
-    background-image: url('./../img/page-bg.jpg');
+    background-image: url('./../img/page-bg.webp');
 }
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+h2 {
+    color: #f1f1f1;
+    font-size: 80px;
+    position: absolute;
+    z-index: -1;
+}
+h2, h3 {
+    font-weight: 800;
+    margin-bottom: 0;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 40px;
+    margin-top: 4px;
+    display: block;
+}
+
 /*start navbar*/
 .navbar-nav .nav-item .nav-link {
     color: #fff;
@@ -18,7 +44,7 @@ body {
 
  /*start hero*/
 .hero {
-    background-image: url('./../img/hero-bg.jpg');
+    background-image: url('./../img/hero-bg.webp');
     background-size: cover;
     background-position: center;
 }
@@ -63,31 +89,48 @@ body {
 }
 /*end about*/
 
-/*start portofolio*/
-.title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-h2 {
-    color: #f1f1f1;
-    font-size: 80px;
-    position: absolute;
-    z-index: -1;
-}
-h2, h3 {
-    font-weight: 800;
-    margin-bottom: 0;
-    letter-spacing: 3px;
-    text-transform: uppercase;
+/*start servisec*/
+.Services {
+    background-image: url(./../img/dark-pg.webp);
 }
 
-h3 {
-    font-size: 40px;
-    margin-top: 4px;
+.Services .title h3 {
+    color: rgb(255, 255, 255);
+}
+
+.Services .title h2 {
+    color: rgb(34, 34, 34);
+}
+
+.Services p {
+    color: rgb(170, 170, 170);
+}
+
+.Services .icon {
+    background-color: #000;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #fff;
+}
+
+.icon svg path {
+    transition: .5s;
+}
+
+.Services .card:hover .icon svg path {
+    fill: var(--primary)
+}
+
+.secvice-content h4:after {
+    content: '';
     display: block;
+    border-bottom: 1px solid var(--primary);
+    margin: 12px auto;
+    width: 35px;
 }
+/*end services*/
 
+/*start portofolio*/
 .portfolio .nav-tabs .nav-link {
     color: #000;
 } 
