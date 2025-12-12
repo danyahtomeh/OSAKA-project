@@ -95,3 +95,14 @@ h3 {
 }
 /*end portfolio*/
 
+/*start about*/
+.about-content h6 {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.about-content a {
+    font-weight: 600;
+
+}
+/*end about*/
