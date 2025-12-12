@@ -51,6 +51,18 @@ body {
 }
 /*end hero*/
 
+/*start about*/
+.about-content h6 {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.about-content a {
+    font-weight: 600;
+
+}
+/*end about*/
+
 /*start portofolio*/
 .title {
     display: flex;
@@ -95,14 +107,24 @@ h3 {
 }
 /*end portfolio*/
 
-/*start about*/
-.about-content h6 {
-    font-weight: 600;
-    font-size: 16px;
+/*start testimonials*/
+.Testimonial img {
+    width: 100px;
+    height: 100px;
 }
 
-.about-content a {
-    font-weight: 600;
-
+.Testimonials .carousel-indicators {
+    bottom: -54px;
 }
-/*end about*/
+
+.carousel-indicators [data-bs-target] {
+    background-color: #dbdbdb;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    background-color: #000;
+}
+/*end testimonials*/
